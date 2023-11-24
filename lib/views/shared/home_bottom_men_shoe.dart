@@ -43,7 +43,7 @@ class Home_Bottom_Men_Shoe extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (context) =>
-                              Product_page(id: shoe.id.toString(), category: shoe.category.toString()),
+                              Product_page(id: shoe.id.toString(), category: shoe.category.toString(),imageUrl: shoe.imageUrl),
                         ),
                       ),
                       child: Product_Card(

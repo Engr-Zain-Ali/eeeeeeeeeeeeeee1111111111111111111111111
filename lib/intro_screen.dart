@@ -2,6 +2,7 @@ import 'package:community_material_icon/community_material_icon.dart';
 
 import 'package:ecommmeranceeeee/views/shared/kkkk.dart';
 import 'package:ecommmeranceeeee/views/ui/login_register_screen.dart';
+import 'package:ecommmeranceeeee/views/ui/login_siginup_screen/sign_in/sign_in_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
@@ -122,7 +123,7 @@ class _IntroScreenState extends State<IntroScreen> with SingleTickerProviderStat
                       onVerticalDragUpdate: (details) {
                         int sensitivity = 8;
                         if(details.delta.dy < -sensitivity){
-                          Navigator.push(context, PageTransition(type: PageTransitionType.bottomToTop, child:LoginScreen ()));
+                          Navigator.push(context, PageTransition(type: PageTransitionType.bottomToTop, child:SignInScreen()));
                         }
                       },
                       child: AbsorbPointer(

@@ -3,6 +3,7 @@ import 'package:ecommmeranceeeee/views/shared/app_style.dart';
 import 'package:ecommmeranceeeee/views/shared/bottom_nav_bar.dart';
 import 'package:ecommmeranceeeee/views/shared/bottom_navigation_bar.dart';
 import 'package:ecommmeranceeeee/views/ui/add.dart';
+import 'package:ecommmeranceeeee/views/ui/components/profile_screen.dart';
 import 'package:ecommmeranceeeee/views/ui/home.dart';
 import 'package:ecommmeranceeeee/views/ui/person.dart';
 import 'package:ecommmeranceeeee/views/ui/shopping_cart.dart';
@@ -24,7 +25,7 @@ class _KKKState extends State<KKK> {
     Search(),
     Add(),
     Shopping_Cart(),
-    Person(),
+  ProfileScreen(),
   ];
 
   @override

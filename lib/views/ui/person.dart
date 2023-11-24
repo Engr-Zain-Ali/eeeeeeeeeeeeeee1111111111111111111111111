@@ -14,6 +14,7 @@ class _PersonState extends State<Person> {
       body: Center(
         child: Text(
           "This is the Person screen",style: appStyle(25, Colors.red, FontWeight.bold),
+
         ),
       ),
     );

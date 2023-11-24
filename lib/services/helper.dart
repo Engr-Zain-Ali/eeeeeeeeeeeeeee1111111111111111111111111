@@ -41,9 +41,18 @@ class Helper {
       final data = await rootBundle.loadString("assets/json/men_shoes.json");
       final maleMap = welcomeFromJson(data);
 
-      final welcome = maleMap.values.firstWhere(
-            (welcome) => welcome.id == id,
+      // print('from json to welcome: ${maleMap.values.first.id}');
+      Welcome welcome = maleMap.values.firstWhere(
+            (welcome) {
+          print('id is : ${welcome.id} = $id');
+          if(welcome.id == id){
+            return false;
+          }
+          return true;
+
+        },
       );
+      print('welcome model is :: ${welcome}');
       return welcome;
     } catch (error) {
       print("Error loading male sneakers by ID: $error");

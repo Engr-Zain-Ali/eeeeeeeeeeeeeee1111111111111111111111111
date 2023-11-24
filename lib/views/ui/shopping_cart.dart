@@ -13,7 +13,7 @@ class _Shopping_CartState extends State<Shopping_Cart> {
     return Scaffold(
       body: Center(
         child: Text(
-          "This is the Shoopy_Cart screen",style: appStyle(25, Colors.red, FontWeight.bold),
+          "This is the Shopping_Cart  screen",style: appStyle(25, Colors.red, FontWeight.bold),
         ),
       ),
     );

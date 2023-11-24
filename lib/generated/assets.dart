@@ -3,13 +3,26 @@ class Assets {
   Assets._();
 
   static const String images1 = 'assets/images/1.png';
+  static const String images1111 = 'assets/images/1111.png';
+  static const String images1212 = 'assets/images/1212.jpg';
   static const String images2 = 'assets/images/2.png';
   static const String images3 = 'assets/images/3.png';
   static const String images4 = 'assets/images/4.png';
+  static const String imagesCall = 'assets/images/Call.png';
+  static const String imagesDownload = 'assets/images/download.png';
+  static const String imagesE1 = 'assets/images/E1.png';
   static const String imagesFf = 'assets/images/ff.png';
   static const String imagesGg = 'assets/images/gg.png';
+  static const String imagesGroup = 'assets/images/Group.png';
   static const String imagesImgNikeText = 'assets/images/img_nike_text.png';
   static const String imagesImgShoes = 'assets/images/img_shoes.png';
+  static const String imagesLock = 'assets/images/Lock.png';
+  static const String imagesMessage = 'assets/images/Message.png';
+  static const String imagesN = 'assets/images/N.png';
+  static const String imagesProfile = 'assets/images/Profile.png';
+  static const String imagesSetting = 'assets/images/Setting.jpg';
+  static const String imagesTwitter = 'assets/images/twitter.png';
+  static const String imagesVector = 'assets/images/Vector.png';
   static const String jsonKidsShoes = 'assets/json/kids_shoes.json';
   static const String jsonMenShoes = 'assets/json/men_shoes.json';
   static const String jsonWomenShoes = 'assets/json/women_shoes.json';

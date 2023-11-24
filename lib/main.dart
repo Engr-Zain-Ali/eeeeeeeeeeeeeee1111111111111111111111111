@@ -1,12 +1,22 @@
 import 'package:ecommmeranceeeee/intro_screen.dart';
 import 'package:ecommmeranceeeee/provider_statemanagement/main_screen_provider_pagechanger.dart';
+import 'package:ecommmeranceeeee/views/CartPage.dart';
 import 'package:ecommmeranceeeee/views/shared/kkkk.dart';
 import 'package:ecommmeranceeeee/views/shared/product_provider.dart';
 import 'package:ecommmeranceeeee/views/shared/show_all.dart';
+import 'package:ecommmeranceeeee/views/ui/Shopping_Cart111.dart';
+import 'package:ecommmeranceeeee/views/ui/components/profile_screen.dart';
+import 'package:ecommmeranceeeee/views/ui/shopping_cart.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/adapters.dart';
 import 'package:provider/provider.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Hive.initFlutter();
+  await Hive.openBox('cart_box');
+  await Hive.openBox('fav_box');
+
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(
       create: (context) => MainScreenNotifier(),
@@ -29,7 +39,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: IntroScreen(),
+      home:IntroScreen(),
     );
   }
 }

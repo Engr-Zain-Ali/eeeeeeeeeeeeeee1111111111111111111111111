@@ -98,7 +98,9 @@ class _Product_CardState extends State<Product_Card> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(widget.name,style: appStyleHt(24, Colors.black, FontWeight.bold,1.1),),
+                      Text(widget.name,
+                        overflow: TextOverflow.ellipsis,
+                        style: appStyleHt(24, Colors.black, FontWeight.bold,1.1),),
                       Text(widget.category,style: appStyleHt(18, Colors.grey, FontWeight.bold,1.5),),
 
 
@@ -111,14 +113,32 @@ class _Product_CardState extends State<Product_Card> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(widget.price,style: appStyle(36, Colors.black, FontWeight.bold,),),
+                      Text(widget.price,style: appStyle(26, Colors.black, FontWeight.bold,),),
                       Row(
                         children: [
-                          Text("Colors",style: appStyle(18, Colors.red, FontWeight.bold),),
+                          Text("Colors:",style: appStyle(18, Colors.red, FontWeight.bold),),
                           SizedBox(width: 5,),
-                          ChoiceChip(label: Text(''), selected:selected,
-                            visualDensity:VisualDensity.compact,
-                          selectedColor: Colors.blue.withOpacity(.8),),
+                          CircleAvatar(
+                            radius: 7,
+                            backgroundColor: Colors.blue,
+                          ),
+                          CircleAvatar(
+                            radius: 7,
+                            backgroundColor: Colors.red,
+                          ),
+                          CircleAvatar(
+                            radius: 7,
+                            backgroundColor: Colors.black,
+                          ),
+                          CircleAvatar(
+                            radius: 7,
+                            backgroundColor: Colors.green,
+                          ),
+                          CircleAvatar(
+                            radius: 7,
+                            backgroundColor: Colors.grey,
+                          ),
+
 
 
 
