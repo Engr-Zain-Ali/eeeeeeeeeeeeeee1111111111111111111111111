@@ -1,5 +1,5 @@
-import 'package:ecommmeranceeeee/views/ui/components/profile_menu.dart';
-import 'package:ecommmeranceeeee/views/ui/components/profile_pic.dart';
+import 'package:ecommmeranceeeee/views/ui/profile_screen/profile_menu.dart';
+import 'package:ecommmeranceeeee/views/ui/profile_screen/profile_pic.dart';
 import 'package:flutter/material.dart';
 
 

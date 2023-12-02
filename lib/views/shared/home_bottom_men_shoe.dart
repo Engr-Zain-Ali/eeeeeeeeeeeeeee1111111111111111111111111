@@ -20,8 +20,8 @@ class Home_Bottom_Men_Shoe extends StatelessWidget {
     return Column(
       children: [
         Container(
-          color: Colors.grey.withOpacity(.1),
-          height: MediaQuery.of(context).size.height * 0.400,
+          //color: Colors.grey.withOpacity(.1),
+          height: MediaQuery.of(context).size.height * 0.350,
           child: FutureBuilder<List<Welcome>>(
             future: _male,
             builder: (context, snapshot) {
@@ -43,7 +43,7 @@ class Home_Bottom_Men_Shoe extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (context) =>
-                              Product_page(id: shoe.id.toString(), category: shoe.category.toString(),imageUrl: shoe.imageUrl),
+                              Product_page(id: shoe.id.toString(), category: shoe.category.toString(),imageUrl: shoe.imageUrl, name: shoe.name, price: shoe.price.toString(), slug: shoe.slug,),
                         ),
                       ),
                       child: Product_Card(
@@ -68,7 +68,7 @@ class Home_Bottom_Men_Shoe extends StatelessWidget {
               padding: const EdgeInsets.only(
                 left: 10.0,
                 right: 18,
-                top: 18,
+                top: 0,
                 bottom: 18,
               ),
               child: Row(
@@ -76,7 +76,7 @@ class Home_Bottom_Men_Shoe extends StatelessWidget {
                 children: [
                   Text(
                     "Latest Shoes",
-                    style: appStyle(22, Colors.black, FontWeight.bold),
+                    style: appStyle(20, Colors.black, FontWeight.bold),
                   ),
                   Row(
                     children: [
@@ -87,24 +87,22 @@ class Home_Bottom_Men_Shoe extends StatelessWidget {
                         ),
                         child: Text(
                           "Show All",
-                          style: appStyle(22, Colors.black, FontWeight.bold),
+                          style: appStyle(20, Colors.black, FontWeight.bold),
                         ),
                       ),
                       SizedBox(width: 4),
                       Icon(
                         Icons.arrow_forward_sharp,
-                        size: 25,
+                        size: 20,
                       )
                     ],
                   ),
                 ],
               ),
             ),
-            SizedBox(
-              height: 2,
-            ),
+
             Container(
-              height: MediaQuery.of(context).size.height * 0.10,
+              height: MediaQuery.of(context).size.height * 0.13,
               child: FutureBuilder<List<Welcome>>(
                 future: _male,
                 builder: (context, snapshot) {
@@ -123,8 +121,8 @@ class Home_Bottom_Men_Shoe extends StatelessWidget {
                         final shoe = male[index];
                         return SingleChildScrollView(
                           child: Padding(
-                            padding: const EdgeInsets.only(bottom: 15, left: 10),
-                            child: New_Shoe(imageUrl: shoe.imageUrl),
+                            padding: const EdgeInsets.only(bottom: 10, left: 10),
+                            child: New_Shoe(imageUrl: shoe.imageUrl,),
                           ),
                         );
                       },

@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="eeeeeeeeeeeeeee1111111111111111111111111"
+        android:label="CPE STORE"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

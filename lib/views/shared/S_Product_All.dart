@@ -24,8 +24,8 @@ class ProductAll extends StatelessWidget {
               padding: EdgeInsets.only(left: 15,right: 15,top: 10),
               itemCount: male!.length,
               crossAxisCount: 2,
-              crossAxisSpacing: 30,
-              mainAxisSpacing: 16,
+              crossAxisSpacing: 10,
+              mainAxisSpacing: 10,
               scrollDirection: Axis.vertical,
 //voice ker kai bateo..?calll kar loo
               staggeredTileBuilder: (index) => StaggeredTile.extent(

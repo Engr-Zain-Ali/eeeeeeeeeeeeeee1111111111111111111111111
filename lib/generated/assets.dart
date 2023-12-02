@@ -11,6 +11,7 @@ class Assets {
   static const String imagesCall = 'assets/images/Call.png';
   static const String imagesDownload = 'assets/images/download.png';
   static const String imagesE1 = 'assets/images/E1.png';
+  static const String imagesF1 = 'assets/images/F1.png';
   static const String imagesFf = 'assets/images/ff.png';
   static const String imagesGg = 'assets/images/gg.png';
   static const String imagesGroup = 'assets/images/Group.png';
@@ -21,6 +22,7 @@ class Assets {
   static const String imagesN = 'assets/images/N.png';
   static const String imagesProfile = 'assets/images/Profile.png';
   static const String imagesSetting = 'assets/images/Setting.jpg';
+  static const String imagesSuccess = 'assets/images/success.png';
   static const String imagesTwitter = 'assets/images/twitter.png';
   static const String imagesVector = 'assets/images/Vector.png';
   static const String jsonKidsShoes = 'assets/json/kids_shoes.json';

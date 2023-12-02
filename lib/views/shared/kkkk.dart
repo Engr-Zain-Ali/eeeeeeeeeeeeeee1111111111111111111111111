@@ -2,14 +2,13 @@ import 'package:ecommmeranceeeee/provider_statemanagement/main_screen_provider_p
 import 'package:ecommmeranceeeee/views/shared/app_style.dart';
 import 'package:ecommmeranceeeee/views/shared/bottom_nav_bar.dart';
 import 'package:ecommmeranceeeee/views/shared/bottom_navigation_bar.dart';
-import 'package:ecommmeranceeeee/views/ui/add.dart';
-import 'package:ecommmeranceeeee/views/ui/components/profile_screen.dart';
 import 'package:ecommmeranceeeee/views/ui/home.dart';
-import 'package:ecommmeranceeeee/views/ui/person.dart';
-import 'package:ecommmeranceeeee/views/ui/shopping_cart.dart';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../chat/Chat.dart';
+import '../ui/profile_screen/profile_screen.dart';
 import '../ui/search.dart';
 
 class KKK extends StatefulWidget {
@@ -23,8 +22,7 @@ class _KKKState extends State<KKK> {
   List pageList = [
     Home(),
     Search(),
-    Add(),
-    Shopping_Cart(),
+    Chat(),
   ProfileScreen(),
   ];
 

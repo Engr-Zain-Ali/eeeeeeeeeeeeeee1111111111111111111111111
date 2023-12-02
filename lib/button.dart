@@ -20,9 +20,13 @@ class _ButtonState extends State<Button> {
         child: GestureDetector(
           onTap: () => widget.onTap?.call(),
           child: Container(
+            decoration: BoxDecoration(
+              color: Colors.black,
+              borderRadius: BorderRadius.circular(20),
+            ),
             width: MediaQuery.of(context).size.width,
-            height: 50,
-            color: Colors.black,
+            height: 70,
+            
             child: Center(
               child: Text(
                 widget.label,

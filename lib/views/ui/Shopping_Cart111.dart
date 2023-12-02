@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../models/men_shoe_model/men_shoe_model.dart';
+import '../../services/helper.dart';
 import '../shared/app_style.dart';
 import '../shared/product_provider.dart';
 
@@ -9,12 +10,14 @@ class Shopping_Cart1 extends StatefulWidget {
   final String id;
   final String category;
   final String imageUrl;
+  final String name;
+  final String price;
 
   const Shopping_Cart1({
     Key? key,
     required this.id,
     required this.category,
-    required this.imageUrl,
+    required this.imageUrl, required this.name, required this.price,
   }) : super(key: key);
 
   @override
@@ -23,12 +26,16 @@ class Shopping_Cart1 extends StatefulWidget {
 
 class _Shopping_Cart1State extends State<Shopping_Cart1> {
   late Future<Welcome> _sneaker;
-  int quantity = 1;
-
   void getShoes() {
-    // Implementation for getting shoes based on category
+    if (widget.category == "Category.RUNNING"||widget.category == "Category.FORMAL"||widget.category == "Category.FOOTBALL"||widget.category == "Category.CASUAL") {
+      _sneaker = Helper().getMaleSneakersById(widget.id);
+    } else if (widget.category == "Category.RUNNING"||widget.category == "Category.FORMAL"||widget.category == "Category.FOOTBALL"||widget.category == "Category.CASUAL") {
+      _sneaker = Helper().getFemaleSneakersById(widget.id);
+    }  else if (widget.category == "Category.RUNNING"||widget.category == "Category.FORMAL"||widget.category == "Category.FOOTBALL"||widget.category == "Category.CASUAL")  {
+      _sneaker = Helper().getKidsSneakersById(widget.id);
+    }
   }
-
+  int quantity = 1;
   @override
   void initState() {
     super.initState();
@@ -112,11 +119,11 @@ class _Shopping_Cart1State extends State<Shopping_Cart1> {
                                 Column(
                                   children: [
                                     Text(
-                                      shoe.name.toString(),
+                                      widget.name.toString(),
                                       style: appStyle(25, Colors.black, FontWeight.bold),
                                     ),
                                     Text(
-                                      shoe.category.toString(),
+                                      widget.category.toString(),
                                       style: appStyle(15, Colors.black, FontWeight.w400),
                                     ),
                                     Column(

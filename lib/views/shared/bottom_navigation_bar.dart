@@ -12,7 +12,7 @@ class BottomNavBar_Widget extends StatelessWidget {
       onTap: onTap,
       child: Container(
         width: 56,
-        height: 56,
+        height: 46,
         child: Icon(icon,color: Colors.white,size: 40,),
       ),
     );

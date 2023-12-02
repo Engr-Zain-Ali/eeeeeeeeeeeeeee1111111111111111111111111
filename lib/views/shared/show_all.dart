@@ -111,15 +111,18 @@ class _Show_AllState extends State<Show_All> with TickerProviderStateMixin {
                          //color: Colors.grey,
 
                          height: MediaQuery.of(context).size.height,
-                         child:  TabBarView(
-                           controller: _tabController,
-                           children: [
-                            ProductAll(male:_male),
-                             ProductAll(male:_female),
-                             ProductAll(male:_kids),
+                         child:  Padding(
+                           padding: const EdgeInsets.all(8.0),
+                           child: TabBarView(
+                             controller: _tabController,
+                             children: [
+                              ProductAll(male:_male),
+                               ProductAll(male:_female),
+                               ProductAll(male:_kids),
 
 
-                           ],
+                             ],
+                           ),
                          ),
                        )
                     ],

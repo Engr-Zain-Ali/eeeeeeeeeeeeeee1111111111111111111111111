@@ -1,3 +1,4 @@
+import 'package:ecommmeranceeeee/views/shared/app_style.dart';
 import 'package:flutter/material.dart';
 
 import '../sign_in/sign_in_screen.dart';
@@ -11,18 +12,22 @@ class LoginSuccessScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: const SizedBox(),
-        title: const Text("Login Success"),
+        title: const Text("Purchase Now"),
       ),
       body: Column(
         children: [
           const SizedBox(height: 16),
-          Image.asset(
-            "assets/images/success.png",
-            height: MediaQuery.of(context).size.height * 0.4, //40%
+          Container(
+
+            child: Image(image:AssetImage(
+              "assets/images/success.png",
+               //40%
+            ),
+            ),
           ),
           const SizedBox(height: 16),
           const Text(
-            "Login Success",
+            "Purchase Successfuly",
             style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.bold,
@@ -33,6 +38,8 @@ class LoginSuccessScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: ElevatedButton(
+              style: ButtonStyle(
+              ),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>SignInScreen()));
               },

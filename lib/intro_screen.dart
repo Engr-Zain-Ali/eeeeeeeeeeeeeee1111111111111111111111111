@@ -1,7 +1,6 @@
 import 'package:community_material_icon/community_material_icon.dart';
 
 import 'package:ecommmeranceeeee/views/shared/kkkk.dart';
-import 'package:ecommmeranceeeee/views/ui/login_register_screen.dart';
 import 'package:ecommmeranceeeee/views/ui/login_siginup_screen/sign_in/sign_in_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

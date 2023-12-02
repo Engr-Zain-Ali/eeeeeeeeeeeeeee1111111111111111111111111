@@ -13,10 +13,10 @@ class New_Shoe extends StatelessWidget {
         BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Colors.yellowAccent,
+            color: Colors.grey,
             spreadRadius: .1,
             blurRadius: 2.0,
-            offset: Offset(0, 1),
+            offset: Offset(0,1 ),
           ),
         ],
         color: Colors.white,
@@ -24,11 +24,11 @@ class New_Shoe extends StatelessWidget {
       height: MediaQuery.of(context)
           .size
           .height *
-          0.12,
+          0.10,
       width: MediaQuery.of(context)
           .size
           .width *
-          0.25,
+          0.20,
     );
   }
 }
